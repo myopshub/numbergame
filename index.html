@@ -1,0 +1,70 @@
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta property="og:image" content="link_pic_of_numbers.png">
+  <meta name="keywords" content="speed test, 1to50, puzzle, fun, funny puzzle, puzzle game,fastest fingers, touch fast, click fast">
+  <title>1to50</title>
+  <link rel="shortcut icon" type="image/x-icon" href="small_icon_link_ico.png">
+  <link rel="icon" type="image/x-icon" href="small_icon_link_ico.png">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="myScript.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style type="text/css">
+  </style>
+</head>
+
+<body onload="funInitial()">
+  <div class="wrap">
+    <div class="detail">
+      <div id="nextDiv" style="display:none">
+        <span>Next Value :</span> <span id="next"></span>
+      </div>
+      <div id="clock" style="display:none">
+        <span id="min">00</span> :
+        <span id="sec">00</span> :
+        <span id="milisec">00</span>
+      </div>
+    </div>
+    <div class="grid x5" id="grid" onclick="funReshuffle()">
+      <div style="opacity: 1;" id="box1" onclick="funChangeValue(id)"><span class="box" style="z-index:75"></span>1</div>
+      <div style="opacity: 1;" id="box2" onclick="funChangeValue(id)"><span class="box" style="z-index:99"></span>2</div>
+      <div style="opacity: 1;" id="box3" onclick="funChangeValue(id)"><span class="box" style="z-index:76"></span>3</div>
+      <div style="opacity: 1;" id="box4" onclick="funChangeValue(id)"><span class="box" style="z-index:86"></span>4</div>
+      <div style="opacity: 1;" id="box5" onclick="funChangeValue(id)"><span class="box" style="z-index:77"></span>5</div>
+      <div style="opacity: 1;" id="box6" onclick="funChangeValue(id)"><span class="box" style="z-index:82"></span>6</div>
+      <div style="opacity: 1;" id="box7" onclick="funChangeValue(id)"><span class="box" style="z-index:83"></span>7</div>
+      <div style="opacity: 1;" id="box8" onclick="funChangeValue(id)"><span class="box" style="z-index:94"></span>8</div>
+      <div style="opacity: 1;" id="box9" onclick="funChangeValue(id)"><span class="box" style="z-index:90"></span>9</div>
+      <div style="opacity: 1;" id="box10" onclick="funChangeValue(id)"><span class="box" style="z-index:95"></span>10</div>
+      <div style="opacity: 1;" id="box11" onclick="funChangeValue(id)"><span class="box" style="z-index:89"></span>11</div>
+      <div style="opacity: 1;" id="box12" onclick="funChangeValue(id)"><span class="box" style="z-index:92"></span>12</div>
+      <div style="opacity: 1;" id="box13" onclick="funChangeValue(id)"><span class="box" style="z-index:87"></span>13</div>
+      <div style="opacity: 1;" id="box14" onclick="funChangeValue(id)"><span class="box" style="z-index:91"></span>14</div>
+      <div style="opacity: 1;" id="box15" onclick="funChangeValue(id)"><span class="box" style="z-index:78"></span>15</div>
+      <div style="opacity: 1;" id="box16" onclick="funChangeValue(id)"><span class="box" style="z-index:85"></span>16</div>
+      <div style="opacity: 1;" id="box17" onclick="funChangeValue(id)"><span class="box" style="z-index:93"></span>17</div>
+      <div style="opacity: 1;" id="box18" onclick="funChangeValue(id)"><span class="box" style="z-index:98"></span>18</div>
+      <div style="opacity: 1;" id="box19" onclick="funChangeValue(id)"><span class="box" style="z-index:88"></span>19</div>
+      <div style="opacity: 1;" id="box20" onclick="funChangeValue(id)"><span class="box" style="z-index:97"></span>20</div>
+      <div style="opacity: 1;" id="box21" onclick="funChangeValue(id)"><span class="box" style="z-index:80"></span>21</div>
+      <div style="opacity: 1;" id="box22" onclick="funChangeValue(id)"><span class="box" style="z-index:81"></span>22</div>
+      <div style="opacity: 1;" id="box23" onclick="funChangeValue(id)"><span class="box" style="z-index:84"></span>23</div>
+      <div style="opacity: 1;" id="box24" onclick="funChangeValue(id)"><span class="box" style="z-index:96"></span>24</div>
+      <div style="opacity: 1;" id="box25" onclick="funChangeValue(id)"><span class="box" style="z-index:79"></span>25</div>
+    </div>
+    <button onclick="startStop()" id="start">Start</button>
+    <h1 id="clickTostart">Click 1 to Start!!!</h1>
+    <form>
+      <div class="chooser">
+        <input type="radio" id="standard" name="selector"><label for="standard">Standard</label>
+        <input type="radio" id="easy" name="selector"><label for="easy">Easy</label>
+        <input type="radio" id="medium" name="selector"><label for="medium">Medium</label>
+        <input type="radio" id="hard" name="selector"><label for="hard">Hard</label>
+      </div>
+    </form>
+  </div>
+
+</html>

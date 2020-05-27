@@ -1,0 +1,228 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-family: Roboto, AppleGothic, sans-serif;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+/*.button {
+  margin: 15px;
+  background-color: #1E1C3D;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px #626171;
+  transform: translateY(4px);
+  color: #dae1e7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+}
+.resetBtn {
+  line-height: 20px;
+  font-size: 13px;
+  display: inline-block;
+  text-decoration: none;
+  color: #dae1e7;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #1E1C3D;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  box-shadow: 0 2.5px #626171;
+  transform: translateY(4px);
+}*/
+
+.detail {
+  position: fixed;
+  width: 27%;
+  height: 5%;
+  margin-left: 35%;
+  margin-top: 7%;
+  color: #142850;
+  font-family: roboto;
+}
+
+#clock {
+  margin-left:50%;
+  position: relative;
+  bottom: 100%;
+  width: 50%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: right;
+}
+
+#nextDiv {
+  margin-top: 2%;
+  width: 50%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: left;
+}
+
+#clickTostart {
+  margin-top: 10px;
+  margin-right: 3%;
+  color: #142850;
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+#start {
+  margin-top: 2px;
+  margin-left: 45%;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #dae1e7;
+  border: 1px solid #6a8caf;
+  border-radius: 10px;
+  transform: translateY(5px);
+  box-shadow: 0 2px #00909e;
+  color: #142850;
+  padding: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.wrap {
+  background-color: #dae1e7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  padding: auto;
+  text-align: center;
+}
+
+.grid {
+  margin-top: 10%;
+  margin-left: 35%;
+  width: 95%;
+  max-width: 370px;
+  height: 60%;
+  overflow: hidden;
+  background-color: 6a8caf;
+}
+
+.grid div {
+  float: left;
+  margin: .5%;
+  background-color: #142850;
+  padding: 0;
+  text-align: center;
+  color: #dae1e7;
+  font-weight: 700;
+  line-height: 70px;
+  font-size: 30px;
+  font-family: Arial;
+  position: relative;
+  overflow: visible
+}
+
+.grid div span {
+  position: absolute;
+  left: -20%;
+  top: -20%;
+  width: 140%;
+  height: 140%;
+  z-index: 1
+}
+
+.grid div.second {
+  background-color: #359;
+}
+
+.grid.x2 div {
+  width: 49%;
+  height: 49%
+}
+
+.grid.x3 div {
+  width: 32.3%;
+  height: 32.3%
+}
+
+.grid.x4 div {
+  width: 24%;
+  height: 24%
+}
+
+.grid.x5 div {
+  width: 19%;
+  height: 19%
+}
+
+.grid.x8 div {
+  width: 11.5%;
+  height: 11.5%
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: #dae1e7;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=radio]:checked + label {
+  color: #142850;
+  background: PaleGreen;
+}
+
+label + input[type=radio] + label {
+  border-left: solid 3px #6a8caf;
+}
+
+.chooser {
+  background: #142850;
+  width: 27%;
+  font-family: roboto;
+  border: solid 3px #6a8caf;
+  display: inline-flex;
+  margin: 10px 35px auto auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
